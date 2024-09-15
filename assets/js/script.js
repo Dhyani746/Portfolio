@@ -13,6 +13,16 @@ const addEventOnElements = function (elements, eventType, callback) {
 }
 
 
+// Loader
+
+window.addEventListener("load", function() {
+  // Hide the loader
+  document.getElementById("loader").style.display = "none";
+
+  // Show the main content
+  document.getElementById("content").style.display = "block";
+});
+
 
 /**
  * NAVBAR TOGGLE FOR MOBILE
